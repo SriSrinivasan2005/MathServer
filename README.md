@@ -1,5 +1,5 @@
 # Ex.05 Design a Website for Server Side Processing
-## Date:
+## Date:26-11-2024
 
 ## AIM:
  To design a website to calculate the power of a lamp filament in an incandescent bulb in the server side. 
@@ -32,13 +32,82 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
-
+```
+<html>
+    <head>
+        <style>
+            .Calculate
+            {
+                width: 30%;
+                padding: 20px;
+                margin: auto;
+                background-color: rgba(22, 88, 210, 0.944);   
+            }
+            p
+            {
+                font-size: 20px;
+                font-weight: bold;
+                bottom: ;
+            }
+        </style>
+        <script>
+            function power()
+            {
+                var i = Number(document.getElementById('t1').value);
+                var r = Number(document.getElementById('t2').value);
+                var p = i*i*r;
+                document.getElementById('power').innerText="Power of Lamp = "+p;
+                
+            }
+        </script>
+    </head>
+    <body bgcolor="aqua" align="center">
+        <br><br><br><br><br><br>
+        <div class="Calculate">
+            <br><br>
+            <p>POWER OF LAMP FILAMENT </p><p>CALCULATOR<p>
+            <form>
+                <input type="number" placeholder="Enter Intensity" id="t1"><br><br>
+                <input type="number" placeholder="Enter Resistance" id="t2"><br><br>
+                <input type="button" value="Calculate Power" onclick="power()"><br><br>
+                <label id="power"></label>
+            </form>
+        </div>
+    </body>
+</html>
+```
 
 ## SERVER SIDE PROCESSING:
-
-
+```
+ <style>
+            .Calculate
+            {
+                width: 30%;
+                padding: 20px;
+                margin: auto;
+                background-color: rgba(22, 88, 210, 0.944);   
+            }
+            p
+            {
+                font-size: 20px;
+                font-weight: bold;
+                bottom: ;
+            }
+        </style>
+        <script>
+            function power()
+            {
+                var i = Number(document.getElementById('t1').value);
+                var r = Number(document.getElementById('t2').value);
+                var p = i*i*r;
+                document.getElementById('power').innerText="Power of Lamp = "+p;
+                
+            }
+        </script>
+```
 ## HOMEPAGE:
 
+![alt text](<mathserver/Screenshot 2024-11-27 144047.png>)
 
 ## RESULT:
 The program for performing server side processing is completed successfully.
